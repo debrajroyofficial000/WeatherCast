@@ -29,7 +29,7 @@ const createLocationDetails = (locationDetails) => {
 };
 
 const createWeatherDetails = (current) => {
-  // temperature icon
+  // temperature iconf
   const tempImageContainer = document.getElementById("tempImageContainer");
   const tempImage = document.createElement("img");
   tempImage.alt = "temp img";
