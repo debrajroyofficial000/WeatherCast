@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER CONTAINER */
+#headerContainer {
+  padding: 1rem 0;
+  background: #000;
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+}
+
+/* MAIN CONTAINER */
+#mainContainer {
+  padding: 1rem;
+  flex-grow: 1;
+  border: 1px solid black;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mainInputContainer {
+  padding: 0.5rem 1rem;
+  background: rgb(211, 210, 210);
+  border-radius: 4px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#searchInput {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  border-radius: 4px;
+}
+
+#searchBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: orange;
+  font-size: inherit;
+  transition: all 0.3s ease-in-out;
+  flex-grow: 1;
+}
+#searchBtn:hover {
+  background: rgb(211, 167, 85);
+  color: whitesmoke;
+}
+
+#locationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+#tempImageContainer {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tempImageContainer > img {
+  width: 80%;
+}
+
+#cardsContainer {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+/* FOOTER CONTAINER */
+#footerContainer {
+  padding: 1rem 0;
+  background: #000;
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  #mainInputContainer {
+    font-size: 1.3rem;
+  }
+}
